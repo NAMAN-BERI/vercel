@@ -1,11 +1,9 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
 
 
 import json
 
 app = Flask(__name__)
-CORS(app) 
 # Load the marks data from the JSON file
 with open('marks.json', 'r') as file:
     data = json.load(file)
